@@ -2572,7 +2572,6 @@ form[name="form_login"] .content {
 .featured{position:relative;z-index:2;display:block;margin:0 -10px;height:190px;overflow:hidden;border:6px solid var(--parchment);border-radius:4px;box-shadow:0 3px 8px rgba(0,0,0,.2);transform:rotate(-.4deg);transition:transform .3s ease,box-shadow .3s ease;}
 .featured:hover{transform:rotate(0) translateY(-2px);}
 .featured img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:sepia(.2) saturate(1.05);transition:transform .6s ease;}
-.featured:hover img{transform:scale(1.05);}
 .featured::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,18,10,.05) 25%,rgba(28,18,10,.9) 100%);}
 .featured-body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:14px 16px 12px;color:var(--foam);}
 .featured-title{font-family:var(--font-title);font-weight:400;font-size:23px;line-height:1.05;letter-spacing:.03em;text-shadow:0 3px 8px rgba(0,0,0,.65);}
