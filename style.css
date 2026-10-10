@@ -160,7 +160,7 @@ body::after {
 .tippy-box[data-theme~='monforum'] {
   background: var(--ink);
   color: var(--foam);
-  font-size: 12px;
+  font-size: var(--size-label);
   font-weight: 600;
   line-height: normal;
   padding: 4px 8px;
