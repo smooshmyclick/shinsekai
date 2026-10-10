@@ -163,24 +163,12 @@ body::after {
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
-  padding: 5px 10px;
+  padding: 4px 8px;
   border-radius: 6px;
   white-space: nowrap;
 }
 .tippy-box[data-theme~='monforum'] > .tippy-content {
   padding: 0;
-}
-.tippy-box[data-theme~='monforum'] > .tippy-arrow {
-  width: 8px;
-  height: 8px;
-}
-.tippy-box[data-theme~='monforum'] > .tippy-arrow::before {
-  border-width: 4px 4px 0;
-  border-top-color: var(--ink);
-}
-.tippy-box[data-theme~='monforum'][data-placement^='bottom'] > .tippy-arrow::before {
-  border-width: 0 4px 4px;
-  border-bottom-color: var(--ink);
 }
 .tippy-box[data-theme~='monforum'][data-animation='fade'] {
   transition: opacity .15s ease;
