@@ -2501,7 +2501,7 @@ form[name="form_login"] .content {
 .board-link:hover{color:var(--gold);opacity:1;}
 .tack{position:absolute;width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--brass),var(--brassDark));box-shadow:0 1px 3px rgba(0,0,0,.25);z-index:4;}
 
-.wood-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 13px;border-radius:8px;border:none;font-family:var(--font);font-weight:700;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--parchment);background:linear-gradient(160deg,var(--woodLight),var(--woodDark));box-shadow:0 2px 0 var(--woodDark);text-shadow:0 2px 0 rgba(0,0,0,.4);transition:transform .12s ease,filter .12s ease;}
+.wood-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:8px 13px;margin: 4px 2px;border-radius:8px;border:none;font-family:var(--font);font-weight:700;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--parchment);background:linear-gradient(160deg,var(--woodLight),var(--woodDark));box-shadow:0 2px 0 var(--woodDark);text-shadow:0 2px 0 rgba(0,0,0,.4);transition:transform .12s ease,filter .12s ease;}
 .wood-btn:hover{filter:brightness(1.08);color:var(--foam);}
 
 /* ANNOUNCEMENTS */
