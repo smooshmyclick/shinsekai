@@ -2591,7 +2591,7 @@ form[name="form_login"] .content {
 .lore-guide::before{content:"";position:absolute;top:90px;left:0;right:0;bottom:-90px;z-index:0;background:url('https://i.pinimg.com/736x/70/24/e2/7024e2453fbe97769a332d8eb6735e69.jpg') center top/cover no-repeat;}
 .lore-guide::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to bottom,var(--parchment) 0%,var(--parchment) 26%,rgba(251,241,217,.7) 34%,rgba(251,241,217,0) 48%);}
 .lore-guide > *{z-index:2;}
-.lore-text .hl{font-weight:700;color:#a8741a;}
+.lore-text .hl{font-weight:700;color:var(--brassDark);}
 .lore-guide .board-title{font-family:var(--font-h1);font-size:38px;line-height:1;text-shadow:3px 3px 0 rgba(28,21,16,.75);}
 .lore-guide .board-head{margin-top:auto;margin-bottom:10px;}
 .lore-text{margin:0;font-size:12.5px;line-height:1.5;font-weight:400;color:var(--softInk);}
