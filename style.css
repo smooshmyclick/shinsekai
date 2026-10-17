@@ -1336,6 +1336,7 @@ a.forumtitle:hover { color: var(--seaMid); }
   overflow: auto;
   font-size: var(--size-body);
   color: var(--softInk);
+  margin-right: 60px;
 }
  
 /* conteneur avatar du dernier posteur */
@@ -1367,7 +1368,7 @@ a.forumtitle:hover { color: var(--seaMid); }
   order: 2;
   align-self: center;
   flex: 0 0 180px;
-  font-size: var(--size-small);
+  font-size: var(--size-body);
   line-height: 1.35;
 }
 .lastpost_link { font-weight: 700; color: var(--ink); }
