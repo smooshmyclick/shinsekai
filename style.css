@@ -1204,98 +1204,217 @@ a.specials_links:empty {
 
 /*** ------------------------------- ***/
 /*** CATEGORIES -------------------- ***/
-
+.category,
+.category * { box-sizing: border-box; }
+ 
 .category {
   background: var(--parchment);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 25px;
+  box-shadow: var(--shadowBox);
 }
-
+ 
 /* Titre d'une catégorie */
 .cate_title h2 {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 700;
+  font-family: var(--font-h1);
+  font-size: var(--size-h1);
+  font-weight: 400;
+  letter-spacing: .04em;
+  color: var(--woodDark);
+  text-shadow: 2px 2px 0 var(--rope);
   margin: 10px 0 20px;
 }
-
-/* conteneur d'un forum*/
+ 
+ 
+/*** ------------------------------- ***/
+/*** FORUMS ------------------------ ***/
+ 
+/* conteneur d'un forum : 4 lignes
+   1 titre + image / 2 stats / 3 description + dernier message / 4 sous-forums */
 .forum {
+  --imgZone: 280px; /* largeur de la zone image : le contenu commence juste après */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 8px;
+  position: relative;
   margin-bottom: 10px;
+  padding: 12px 14px;
   background: var(--sand1);
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: var(--r7);
+  box-shadow: 0 2px 0 var(--inkLine);
+  transition: box-shadow .2s ease;
 }
-
-.forum:last-child {
-  margin-bottom: 0;
+ 
+.forum:last-child { margin-bottom: 0; }
+.forum:hover { box-shadow: 0 6px 14px rgba(60,40,15,.2); }
+ 
+/* image de la description (générée par FA dans .forum_desc) :
+   sortie du texte, placée à gauche en fond, nette au début puis fondue.
+   La marge gauche n'est ajoutée que si le forum a une image. */
+.forum:has(.forum_desc > img) { padding-left: calc(var(--imgZone) + 14px); }
+.forum_desc > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--imgZone) + 10px);
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--r7) 0 0 var(--r7);
+  mask-image: linear-gradient(90deg, #000 calc(var(--imgZone) - 130px), transparent 100%);
+  pointer-events: none;
 }
-
+ 
+/* ces conteneurs ne créent pas de boîte : leurs enfants se rangent directement dans .forum */
+.forum_content,
+.forum_details { display: contents; }
+ 
+ 
+/* ---- ligne 1 : titre + image statut ---- */
+ 
 /* titre d'un forum */
 a.forumtitle {
-  font-size: var(--large-size);
+  align-self: center;
+  font-family: var(--font-title);
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: .03em;
+  color: var(--woodDark);
+  text-shadow: 1px 1px 0 var(--rope);
 }
-
-.forum_content {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-/*image statut du forum */
+a.forumtitle:hover { color: var(--seaMid); }
+ 
+/* image statut du forum */
 .forum-img {
-  width: 70px;
-  height: 70px;
-  background-color: var(--parchment);
+  align-self: center;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
 }
-
-/*description du forum*/
+ 
+ 
+/* ---- ligne 2 : statistiques ---- */
+ 
+.forum_stats {
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 2px 12px 3px;
+  background: var(--parchment);
+  border: var(--border);
+  border-radius: 99px;
+}
+.stat b {
+  font-family: var(--font-title);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: .03em;
+  color: var(--woodDark);
+}
+.stat i {
+  font-style: normal;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ropeDark);
+}
+ 
+ 
+/* ---- ligne 3 : description + dernier message ---- */
+ 
+/* description du forum */
 .forum_desc {
+  order: 2;
   flex: 1;
+  align-self: center;
   max-height: 65px;
   overflow: auto;
-  align-self: center;
+  font-size: var(--size-small);
+  color: var(--softInk);
 }
-
-/*conteneur avatar du dernier posteur*/
+ 
+/* conteneur avatar du dernier posteur */
 .forum_avatar {
+  order: 2;
+  align-self: center;
+  flex: none;
   width: 60px;
   height: 60px;
+  overflow: hidden;
+  background: var(--sand2);
+  border: 3px solid var(--sand2);
+  border-radius: var(--r4);
+  box-shadow: 0 2px 5px rgba(0,0,0,.22);
 }
-
+.forum_avatar:empty { display: none; }
+ 
 .forum_avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: var(--parchment);
-  width: 60px;
-  height: 60px;
   object-fit: cover;
   object-position: center;
 }
-
-/* dernier message*/
+ 
+/* dernier message */
 .forum_lastpost {
-  width: 180px;
+  order: 2;
+  align-self: center;
+  flex: 0 0 180px;
+  font-size: var(--size-small);
+  line-height: 1.35;
 }
-
-/* liens des sous forums */
+.lastpost_link { font-weight: 700; color: var(--ink); }
+.lastpost_link:hover { color: var(--seaMid); }
+ 
+ 
+/* ---- ligne 4 : liens des sous-forums ---- */
+ 
 #subforum {
-  font-size: 0;
-  /*permet de retirer la virgule*/
+  order: 3;
+  flex: 0 0 100%;
+  padding-top: 6px;
+  border-top: 2px dotted var(--ropeDark);
+  font-size: 0; /* permet de retirer la virgule et le libellé */
 }
-
+#subforum:empty { display: none; }
+ 
 #subforum a {
-  font-size: var(--little-size);
-  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 13px;
+  margin: 4px 2px;
+  border-radius: 8px;
+  border: none;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--parchment);
+  background: linear-gradient(160deg, var(--woodLight), var(--woodDark));
+  box-shadow: 0 2px 0 var(--woodDark);
+  text-shadow: 0 2px 0 rgba(0,0,0,.4);
+  transition: transform .12s ease, filter .12s ease;
 }
-
-.forum_stats {
-  font-weight: 600;
-  float: right;
-  font-size: var(--little-size);
-}
+#subforum a:hover { transform: translateY(-1px); filter: brightness(1.12); }
+#subforum a:active { transform: translateY(1px); box-shadow: 0 1px 0 var(--woodDark); }
 
 /*** ------------------------------- ***/
 /*** QUI EST EN LIGNE -------------- ***/
