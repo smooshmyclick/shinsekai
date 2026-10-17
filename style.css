@@ -2796,12 +2796,12 @@ form[name="form_login"] .content {
   .forum-img, .forum_desc { display: none; }
  
   .forum_avatar {
-    width: 46px;
-    height: 46px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     background: var(--sand2);
     border: 3px solid var(--sand1);
-    border-radius: var(--r4);
+    border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .22);
   }
   .forum_avatar:empty { display: none; }
