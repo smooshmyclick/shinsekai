@@ -1337,7 +1337,7 @@ order: 2;
   overflow: auto;
   font-size: var(--size-body);
   color: var(--softInk);
-  margin-right: 60px;
+  margin-right: 24px;
   border: 1px solid var(--woodLight);
   padding: 12px 18px;
   border-radius: var(--r12);
