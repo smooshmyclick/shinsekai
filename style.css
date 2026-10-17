@@ -162,10 +162,13 @@ body::after {
   color: var(--foam);
   font-size: var(--size-label);
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.35;
   padding: 4px 8px;
   border-radius: 6px;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 280px !important;
 }
 .tippy-box[data-theme~='monforum'] > .tippy-content {
   padding: 0;
