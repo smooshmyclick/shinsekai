@@ -1222,7 +1222,7 @@ a.specials_links:empty {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-h1);
-  font-size: var(--size-h1);
+  font-size: clamp(34px, 4.4vw, 56px);
   font-weight: 400;
   letter-spacing: .04em;
   color: var(--woodDark);
