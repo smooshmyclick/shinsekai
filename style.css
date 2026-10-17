@@ -1230,14 +1230,11 @@ a.specials_links:empty {
   margin: 10px 0 20px;
 }
  
- 
 /*** ------------------------------- ***/
 /*** FORUMS ------------------------ ***/
  
-/* conteneur d'un forum : 4 lignes
-   1 titre + image / 2 stats / 3 description + dernier message / 4 sous-forums */
 .forum {
-  --imgZone: 280px; /* largeur de la zone image : le contenu commence juste après */
+  --imgZone: 280px; /* zone img */
   display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
@@ -1254,9 +1251,6 @@ a.specials_links:empty {
 .forum:last-child { margin-bottom: 0; }
 .forum:hover { box-shadow: 0 6px 14px rgba(60,40,15,.2); }
  
-/* image de la description (générée par FA dans .forum_desc) :
-   sortie du texte, placée à gauche en fond, nette au début puis fondue.
-   La marge gauche n'est ajoutée que si le forum a une image. */
 .forum:has(.forum_desc > img) { padding-left: calc(var(--imgZone) + 14px); }
 .forum_desc > img {
   position: absolute;
@@ -1270,13 +1264,9 @@ a.specials_links:empty {
   pointer-events: none;
 }
  
-/* ces conteneurs ne créent pas de boîte : leurs enfants se rangent directement dans .forum */
 .forum_content,
 .forum_details { display: contents; }
- 
- 
-/* ---- ligne 1 : titre + image statut ---- */
- 
+
 /* titre d'un forum */
 a.forumtitle {
   align-self: center;
@@ -1297,10 +1287,7 @@ a.forumtitle:hover { color: var(--seaMid); }
   object-fit: contain;
   filter: drop-shadow(0 2px 2px rgba(0,0,0,.25));
 }
- 
- 
-/* ---- ligne 2 : statistiques ---- */
- 
+
 .forum_stats {
   flex: 0 0 100%;
   display: flex;
@@ -1332,10 +1319,7 @@ a.forumtitle:hover { color: var(--seaMid); }
   text-transform: uppercase;
   color: var(--ropeDark);
 }
- 
- 
-/* ---- ligne 3 : description + dernier message ---- */
- 
+
 /* description du forum */
 .forum_desc {
   order: 2;
@@ -1343,7 +1327,7 @@ a.forumtitle:hover { color: var(--seaMid); }
   align-self: center;
   max-height: 65px;
   overflow: auto;
-  font-size: var(--size-small);
+  font-size: var(--size-body);
   color: var(--softInk);
 }
  
@@ -1381,10 +1365,8 @@ a.forumtitle:hover { color: var(--seaMid); }
 }
 .lastpost_link { font-weight: 700; color: var(--ink); }
 .lastpost_link:hover { color: var(--seaMid); }
- 
- 
-/* ---- ligne 4 : liens des sous-forums ---- */
- 
+
+/* sous-forum */
 #subforum {
   order: 3;
   flex: 0 0 100%;
