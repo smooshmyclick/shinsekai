@@ -1249,7 +1249,6 @@ a.specials_links:empty {
 }
  
 .forum:last-child { margin-bottom: 0; }
-.forum:hover { box-shadow: 0 6px 14px rgba(60,40,15,.2); }
  
 .forum:has(.forum_desc > img) { padding-left: calc(var(--imgZone) + 14px); }
 .forum_desc > img {
