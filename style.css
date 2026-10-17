@@ -2765,6 +2765,7 @@ form[name="form_login"] .content {
     border-radius: 3px;
     transform: rotate(1deg);
     transform-origin: top center;
+    margin-top: 0;
   }
   .forum:hover .forum_content { animation: sway 1.8s ease-in-out infinite; }
   @keyframes sway { 50% { transform: rotate(2.6deg); } }
