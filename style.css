@@ -1249,6 +1249,7 @@ a.specials_links:empty {
   border-radius: var(--r7);
   box-shadow: 0 2px 0 var(--inkLine);
   transition: box-shadow .2s ease;
+  border: 1px solid rgba(165, 129, 79, .4);
 }
  
 .forum:last-child { margin-bottom: 0; }
