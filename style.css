@@ -277,14 +277,15 @@ a:hover {
 /* Utilisé pour des titres de pages */
 h1,
 h1.page-title {
-  color: var(--foam);
-  margin: 10px 0 20px;
-  font-size: var(--size-title);
-  font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
-  font-family: var(--font-title);
-  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-family: var(--font-h1);
+  font-size: var(--size-h1);
+  font-weight: 400;
+  letter-spacing: .04em;
+  color: var(--woodDark);
+  text-shadow: 2px 2px 0 var(--rope);
+  margin: 10px 0 20px;
 }
 
 /* Utilisé pour des titres de sujets, blogs... */
