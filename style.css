@@ -301,7 +301,7 @@ a:hover {
   text-shadow: none;
   filter: drop-shadow(4px 4px 0 var(--softInk)) drop-shadow(8px 8px 0 var(--softInk));
 
-  transition: background-position 1.2s ease;
+  transition: background-position 2.2s ease;
 }
 
 .forum-name:hover {
