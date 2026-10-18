@@ -3144,7 +3144,7 @@ form[name="form_login"] .content {
 /* users */
 .ss-users,.ss-recent-list{font-size:0;line-height:1.5;}
 .ss-users{text-align:center;margin:auto;}
-.ss-users a,.ss-recent-list a{font-size:13.5px;}
+.ss-users a,.ss-recent-list a{font-size: var(--size-body);}
 .ss-users a:not(:last-of-type)::after,
 .ss-recent-list a:not(:last-of-type)::after{
   content:"";display:inline-block;width:5px;height:5px;margin:0 6px;
