@@ -3166,7 +3166,7 @@ form[name="form_login"] .content {
 .ss-stat.ss-stat--right{padding-right:var(--iconSlot);}
 .ss-stat > span{
   display:flex;align-items:baseline;gap:8px;white-space:nowrap;
-  font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ropeDark);
+  font-size: var(--size-small);font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ropeDark);
 }
 .ss-stat b,.ss-stat strong{
   font-family:var(--font-title);font-weight:400;font-size:24px;line-height:1;
