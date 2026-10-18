@@ -273,8 +273,36 @@ a:hover {
   line-height: 0.85;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: var(--parchment);
-  text-shadow: 4px 4px 0 var(--softInk), 8px 8px 0 var(--softInk);
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 40%,
+      rgba(255, 255, 255, .9) 50%,
+      transparent 60%
+    ),
+    linear-gradient(
+      to bottom,
+      var(--parchment) 35%,
+      color-mix(in srgb, var(--rope) 70%, var(--parchment)) 100%
+    );
+  background-size: 250% 100%, 100% 100%;
+  background-position: 120% 0, 0 0;
+  background-repeat: no-repeat;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  text-shadow: none;
+  filter: drop-shadow(4px 4px 0 var(--softInk)) drop-shadow(8px 8px 0 var(--softInk));
+
+  transition: background-position 1.2s ease;
+}
+
+.forum-name:hover {
+  background-position: -20% 0, 0 0;
 }
 
 /* Utilisé pour des titres de pages */
