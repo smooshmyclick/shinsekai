@@ -1227,7 +1227,10 @@ a.specials_links:empty {
  
 /* Titre d'une catégorie */
 .cate_title h2 {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-h1);
@@ -1237,6 +1240,24 @@ a.specials_links:empty {
   color: var(--woodDark);
   text-shadow: 2px 2px 0 var(--rope);
   margin: 10px 0 20px;
+}
+
+/* Image de gauche */
+.cate_title h2::before {
+  content: "";
+  flex-shrink: 0;
+  width: clamp(40px, 5vw, 80px);
+  aspect-ratio: 1 / 1;
+  background: url("https://i.imgur.com/LPVNjUe.png") center / contain no-repeat;
+}
+
+/* Image de droite */
+.cate_title h2::after {
+  content: "";
+  flex-shrink: 0;
+  width: clamp(40px, 5vw, 80px);
+  aspect-ratio: 1 / 1;
+  background: url("https://i.imgur.com/uHJI9vs.png") center / contain no-repeat;
 }
  
 /*** ------------------------------- ***/
