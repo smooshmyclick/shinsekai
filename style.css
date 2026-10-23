@@ -1676,7 +1676,6 @@ order: 2;
 #sort-topics {
   position: relative;
   display: inline;
-  background: var(--parchment);
   margin: 10px 0;
 }
 
