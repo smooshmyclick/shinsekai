@@ -494,7 +494,7 @@ body#sce_smilies_body {
   text-align: center;
   font-family: var(--font);
   font-size: 0;
-  color: var(--foam);
+  color: var(--ropeDark);
   padding: 5px 8px;
   background: var(--parchment);
   border: var(--border);
