@@ -2216,7 +2216,7 @@ button.rep-button .rep-nb {
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  padding: 14px 0 16px;
+  padding: 0 0 12px;
   line-height: 1.15;
 }
  
@@ -2234,7 +2234,6 @@ button.rep-button .rep-nb {
 }
  
 .post_rank {
-  font-size: var(--size-small);
   font-weight: 500;
   color: var(--sand1);
 }
