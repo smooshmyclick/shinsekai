@@ -1506,9 +1506,16 @@ order: 2;
 /* Chaîne de navigation et pagination
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body)) */
 .navigation_links {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
+  font-size: 0;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 8px;
+  background: var(--parchment);
+  border: var(--border);
+  border-radius: 99px;
+  box-shadow: 0 3px 0 rgba(165,129,79,.45),var(--shadowBox);
 }
 
 /* chaîne de lien de navigation : catégorie > forum > sous-fo */
