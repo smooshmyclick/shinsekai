@@ -1730,7 +1730,8 @@ order: 2;
 }
 
 .topicslist-pagination .pagination {
-    padding: 2px;
+  padding: 2px;
+  box-shadow: none;
 }
  
 .topicslist-pagination a {
