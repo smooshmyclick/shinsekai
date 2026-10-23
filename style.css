@@ -2268,7 +2268,6 @@ a.fa-mention {
 .post_userinfo {
   order: 4;
   color: var(--parchment);
-  font-size: var(--size-small);
 }
  
 .post_contact {
@@ -2276,7 +2275,6 @@ a.fa-mention {
   padding-bottom: 12px;
   text-align: center;
   color: var(--parchment);
-  font-size: var(--size-small);
 }
  
 /* RECOMPENSES --- */
