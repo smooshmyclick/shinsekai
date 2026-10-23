@@ -1998,9 +1998,6 @@ grid-column: 2;
   margin-bottom: 30px;
   padding: 16px;
   background: rgba(243, 226, 182, .92);
-  border: 1px solid rgba(165, 129, 79, .45);
-  border-radius: var(--r12);
-  box-shadow: 0 3px 0 rgba(165, 129, 79, .4);
   counter-increment: post_num;
 }
  
