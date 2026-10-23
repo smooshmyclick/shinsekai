@@ -1419,8 +1419,8 @@ order: 2;
   order: 2;
   align-self: center;
   flex: none;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 65px;
   overflow: hidden;
   background: var(--sand2);
   border: 3px solid var(--parchment);
@@ -1818,11 +1818,11 @@ grid-column: 2;
  
 /* Avatar du dernier posteur */
 .topicslist-avatar-lastpost {
-  flex: 0 0 60px;
-  width: 60px;
-  height: 60px;
+  flex: 0 0 80px;
+  width: 80px;
+  height: 65px;
   border: 3px solid var(--sand1);
-  border-radius: 50%;
+  border-radius: var(--r12);
   overflow: hidden;
   background: var(--sand2);
 }
@@ -3095,7 +3095,7 @@ form[name="form_login"] .content {
     order: 2;
     position: relative;
     display: grid;
-    grid-template-columns: 60px minmax(0, 1fr);
+    grid-template-columns: 80px minmax(0, 1fr);
     align-items: center;
     gap: 7px 10px;
     padding: 16px 14px 12px;
@@ -3126,8 +3126,8 @@ form[name="form_login"] .content {
   .forum-img, .forum_desc { display: none; }
  
   .forum_avatar {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 65px;
     overflow: hidden;
     background: var(--sand2);
     border: 3px solid var(--sand1);
