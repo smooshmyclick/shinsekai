@@ -2185,7 +2185,6 @@ button.rep-button .rep-nb {
   border-right: none;
   border-radius: var(--r12);
   background: linear-gradient(160deg, var(--woodLight), var(--woodMid) 45%, var(--woodDark));
-  box-shadow: inset 0 0 0 2px var(--brassDark), 0 6px 14px rgba(60, 40, 15, .35);
 }
  
 .post_profile br {
