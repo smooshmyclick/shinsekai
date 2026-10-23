@@ -500,6 +500,7 @@ body#sce_smilies_body {
   border: var(--border);
   border-radius: 99px;
   box-shadow: 0 3px 0 rgba(165,129,79,.45),var(--shadowBox);
+  width: fit-content;
 }
 .pagination > span{
   font-size:var(--size-small);
@@ -1726,6 +1727,10 @@ order: 2;
 /* Pagination du sujet */
 .topicslist-pagination {
   font-size: var(--size-small);
+}
+
+.topicslist-pagination .pagination {
+    padding: 2px;
 }
  
 .topicslist-pagination a {
