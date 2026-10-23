@@ -2046,11 +2046,13 @@ div.post_row:last-of-type {
  
 .post_date a {
   color: inherit;
+  font-size: var(--size-body);
 }
  
 .post_date time {
   font-style: normal;
   opacity: .85;
+  font-size: var(--size-body);
 }
  
 .post_date time::before {
