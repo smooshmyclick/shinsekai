@@ -1857,7 +1857,7 @@ order: 2;
   margin: 0 14px;
   padding: 8px 0 10px;
   border-top: 1px solid var(--inkLine);
-  font-size: 12.5px;
+  font-size: var(--size-body);
   line-height: 1.5;
   color: var(--softInk);
   transition: transform .2s;
