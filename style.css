@@ -1533,7 +1533,7 @@ order: 2;
   color:var(--woodDark);
 }
 
-.navigation_chain a:here {
+.navigation_chain a:last-child {
   font-family:var(--font-title);
   font-weight:400;
   font-size:20px;
