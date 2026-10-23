@@ -1955,6 +1955,21 @@ grid-column: 2;
 
 /*** ------------------------------- ***/
 /*** SUJET ------------------------- ***/
+
+/* link bar des sujets */
+.post_linkbar { background: none; box-shadow: none; padding: 0; }
+
+.post_buttons {
+  font-family: var(--font-title);
+  color: var(--softInk);
+  padding: 6px 12px;
+  background: var(--foam);
+  border: var(--border);
+  border-radius: 99px;
+  box-shadow: 0 3px 0 rgba(165,129,79,.45),var(--shadowBox);
+  font-size: var(--size-h2);
+  letter-spacing: 0.04em;
+}
  
 /* PANEL --- */
 .container {
