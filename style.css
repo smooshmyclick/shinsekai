@@ -1622,9 +1622,10 @@ order: 2;
   z-index: -1;
   background:
     linear-gradient(to right, var(--parchment) 30%, transparent),
+    linear-gradient(rgba(251, 241, 217, .4), rgba(251, 241, 217, .4)),
     url('https://i.imgur.com/012OSK5.jpeg') right bottom / cover no-repeat;
-  background-color: #808080;
-  background-blend-mode: normal, luminosity;
+  background-color: var(--sand4);
+  background-blend-mode: normal, normal, luminosity;
   border: 1px solid rgba(165, 129, 79, .35);
   border-radius: var(--r12);
   box-shadow: 0 2px 0 rgba(165, 129, 79, .3);
