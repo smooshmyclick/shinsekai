@@ -3145,17 +3145,6 @@ form[name="form_login"] .content {
 
 /* ----- Barre ----- */
 .links_bar.sn_toolbar {
-  --sn-parchment: #fbf1d9;
-  --sn-parchmentDark: #f3e2b6;
-  --sn-woodMid: #8a6238;
-  --sn-woodDark: #6b4726;
-  --sn-ropeDark: #a5814f;
-  --sn-seaMid: #1d8a86;
-  --sn-seaDeep: #0e5a5e;
-  --sn-foam: #fffaf0;
-  --sn-gold: #ffcf6b;
-  --sn-inkLine: rgba(90, 67, 39, .16);
- 
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -3165,7 +3154,7 @@ form[name="form_login"] .content {
   padding: 6px 14px;
   line-height: 1;
   text-align: left;
-  background: var(--sn-parchment);
+  background: var(--parchment);
   border: 0;
   border-radius: 12px;
   box-shadow: 0 0 20px #1c151033;
@@ -3187,7 +3176,7 @@ form[name="form_login"] .content {
   align-self: stretch;
   width: 0;
   margin: 4px 8px 4px 2px;
-  border-left: 2px dotted var(--sn-ropeDark);
+  border-left: 2px dotted var(--ropeDark);
   opacity: .7;
 }
  
@@ -3201,8 +3190,8 @@ form[name="form_login"] .content {
   float: none;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid var(--sn-inkLine);
-  color: var(--sn-woodMid);
+  border: 1px solid var(--inkLine);
+  color: var(--woodMid);
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
@@ -3218,23 +3207,23 @@ form[name="form_login"] .content {
 .links_bar.sn_toolbar .sn_tool:focus-visible {
   outline: none;
   transform: translateY(-2px);
-  background: var(--sn-seaMid);
-  border-color: var(--sn-seaDeep);
-  color: var(--sn-foam);
+  background: var(--seaMid);
+  border-color: var(--seaDeep);
+  color: var(--foam);
   text-decoration: none;
 }
  
 .links_bar.sn_toolbar .sn_tool--action {
-  background: var(--sn-parchmentDark);
-  border-color: var(--sn-ropeDark);
-  color: var(--sn-woodDark);
+  background: var(--parchmentDark);
+  border-color: var(--ropeDark);
+  color: var(--woodDark);
 }
  
 .links_bar.sn_toolbar .sn_tool--action:hover,
 .links_bar.sn_toolbar .sn_tool--action:focus-visible {
-  background: var(--sn-woodMid);
-  border-color: var(--sn-woodDark);
-  color: var(--sn-gold);
+  background: var(--woodMid);
+  border-color: var(--woodDark);
+  color: var(--gold);
 }
  
 .links_bar.sn_toolbar .specials_links.right {
