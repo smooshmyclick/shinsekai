@@ -190,7 +190,7 @@ body::after {
 .panel {
   background: var(--sand1);
   border: var(--border);
-  border-radius: 5px;
+  border-radius: var(--r12);
   padding: 10px;
   margin: 25px 0;
 }
@@ -2705,7 +2705,7 @@ blockquote cite a {
   background: var(--sand1);
   padding: 10px;
   border: var(--border);
-  border-radius: 5px;
+  border-radius: var(--r12);
 }
 
 /*** ------------------------------- ***/
