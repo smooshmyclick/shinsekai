@@ -1714,7 +1714,7 @@ order: 2;
 }
 
 .topic-author {
-  font-size: var(--size-small);
+  font-size: var(--size-body);
   color: var(--softInk);
 }
  
@@ -1793,7 +1793,6 @@ order: 2;
   background: var(--parchment);
   border: 1px solid rgba(165, 129, 79, .5);
   border-radius: 3px;
-  box-shadow: 0 5px 12px rgba(60, 40, 15, .22);
   transform: rotate(1deg);
   transform-origin: top center;
 }
@@ -1809,7 +1808,6 @@ order: 2;
   height: 13px;
   border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, var(--brass), var(--brassDark));
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .35);
 }
  
 /* Avatar du dernier posteur */
@@ -1841,7 +1839,7 @@ order: 2;
   color: var(--softInk);
 }
  
-.topicslist-lastpost span {
+.topicslist-lastpost > span {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
