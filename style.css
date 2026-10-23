@@ -1597,7 +1597,6 @@ order: 2;
  
 /* =====================================================
    Conteneur d'un sujet
-   Grille : [médaille] [carte titre + stats] [carte dernier message]
    ===================================================== */
 .topicslist_row {
   position: relative;
@@ -1627,7 +1626,7 @@ order: 2;
       rgba(249, 236, 206, 1) calc(100% - 560px),
       rgba(249, 236, 206, var(--ov)) calc(100% - 252px),
       rgba(249, 236, 206, var(--ov)) 100%),
-    url('https://i.pinimg.com/736x/ac/b0/a2/acb0a28dc789284578e70da75f9f6a2f.jpg');
+    url('https://i.imgur.com/9ts2ErJ.png');
   background-size: 100% 100%, cover;
   background-position: 0 0, right center;
   background-repeat: no-repeat;
@@ -1659,7 +1658,6 @@ order: 2;
   50% { transform: rotate(2.6deg); }
 }
  
-/* Image du sujet : médaille générée par Forumactif (mise en forme uniquement) */
 .topicslist-img {
   grid-column: 1;
   grid-row: 1;
@@ -1698,7 +1696,6 @@ order: 2;
 .topictitle {
   font-size: var(--size-body);
   font-weight: 700;
-  /* permet de raccourcir les titres trop longs : "Titre du suj..." */
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
@@ -1710,7 +1707,6 @@ order: 2;
   color: var(--seaMid);
 }
  
-/* Label type de sujet : annonce, note, ... */
 .topic-type {
   display: inline-block;
   margin-right: 6px;
@@ -1730,7 +1726,6 @@ order: 2;
   display: none;
 }
  
-/* icône de type de message ( exemple : -18 ans, sujet résolu, ... ) */
 .topic_msgicon {
   margin-right: 5px;
 }
