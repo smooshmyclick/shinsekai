@@ -2883,15 +2883,6 @@ form[name="form_login"] .content {
   .forum:hover .forum_content { animation: sway 1.8s ease-in-out infinite; }
   @keyframes sway { 50% { transform: rotate(2.6deg); } }
  
-  .forum_content::before {
-    content: "Last message";
-    grid-column: 1 / -1;
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--ropeDark);
-  }
   /* punaise */
   .forum_content::after {
     content: "";
