@@ -1522,15 +1522,33 @@ order: 2;
 }
 
 .navigation_chain a {
-  font-size: initial;
-  /*rétablit la taille des liens*/
-  margin-right: 8px;
+  font-size: var(--size-body);
+  color: var(--softInk);
+  padding: 3px 12px;
+  border-radius: 99px;
+}
+
+.navigation_chain a:hover {
+  background:var(--sand2);
+  color:var(--woodDark);
+}
+
+.navigation_chain a:here {
+  font-family:var(--font-title);
+  font-weight:400;
+  font-size:20px;
+  line-height:1.1;
+  letter-spacing:.04em;
+  color:var(--parchment);
+  background:linear-gradient(var(--woodLight),var(--woodDark));
+  border-bottom:2px solid #4d3219;
+  text-shadow:0 2px 0 rgba(0,0,0,.4);
+  padding:2px 16px 3px;
 }
 
 .navigation_chain a:before {
   content: "›";
-  /*symbole ou texte modifiable*/
-  font-size: var(--nomal-size);
+  font-size: var(--size-body);
   margin-right: 3px;
 }
 
