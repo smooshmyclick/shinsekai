@@ -2432,9 +2432,9 @@ a.fa-mention {
 
 /* Contenu code, spoiler et hide*/
 .codebox dd {
-  background: var(--parchment);
+  background: var(--sand2);
   border-radius: 5px;
-  padding: 5px;
+  padding: 12px;
 }
 
 /* Nom de balise "code, spoiler" */
@@ -2459,6 +2459,9 @@ a.fa-mention {
   font-family: monospace;
   text-transform: uppercase;
   cursor: pointer;
+  background: var(--ropeDark);
+  padding: 4px 8px;
+  border-radius: var(--r7);
 }
 
 div.cont_code {
