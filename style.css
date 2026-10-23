@@ -2483,14 +2483,19 @@ div.cont_code {
 
 /* Citation contenu */
 blockquote div {
-  padding-left: 20px;
+  border-radius: var(--r7);
+  padding: 12px 28px;
+  background: linear-gradient(160deg, var(--sand1), var(--sand2) 45%, var(--sand3));
 }
 
 /* Citation mention "... a écrit" */
 blockquote cite {
   display: block;
-  margin-left: -20px;
+  margin-left: -12px;
   font-style: normal;
+  font-family: var(--font-title);
+  font-size: var(--size-h1);
+  color: var(--woodDark);
 }
 
 /* Citation pseudo */
