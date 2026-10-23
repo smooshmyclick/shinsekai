@@ -79,8 +79,7 @@
 body {
   background-color: var(--sand4);
   font-family: var(--font);
-  font-size: var(--normal-size);
-  color: var(--textColor);
+  font-size: var(--size-body);
   margin: 0 !important;
   position: relative;
 }
