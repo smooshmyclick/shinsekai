@@ -891,25 +891,13 @@ a.specials_links:empty {
 
 /* Fermer la boîte de connexion */
 .monomer-close {
-  font-size: 16px;
   line-height: 12px;
-  width: 18px;
-  height: 18px;
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
-  color: var(--textColor);
   border: 0;
   outline: none;
-  background: var(--contrastLighter);
-  border-radius: 4px;
-  padding: 0;
-  padding-left: 1px;
-}
-
-.monomer-close:hover {
-  background: var(--contrastLight);
 }
 
 /*** ------------------------------- ***/
