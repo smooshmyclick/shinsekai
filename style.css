@@ -1929,6 +1929,8 @@ grid-column: 2;
 /* Nombre de participants */
 .poster-count {
   margin-left: 8px;
+  font-weight: bold;
+  color: var(--softInk);
 }
 
 .poster-more-list {
