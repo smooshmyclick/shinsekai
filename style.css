@@ -1505,7 +1505,10 @@ order: 2;
 
 /* Chaîne de navigation et pagination
  * (réutilisé dans l'affichage d'un sujet (viewtopic_body)) */
-.navigation_links {
+.navigation_links { }
+
+/* chaîne de lien de navigation : catégorie > forum > sous-fo */
+.navigation_chain {
   font-size: 0;
   align-self: flex-start;
   display: inline-flex;
@@ -1516,12 +1519,6 @@ order: 2;
   border: var(--border);
   border-radius: 99px;
   box-shadow: 0 3px 0 rgba(165,129,79,.45),var(--shadowBox);
-}
-
-/* chaîne de lien de navigation : catégorie > forum > sous-fo */
-.navigation_chain {
-  font-size: 0;
-  /*retire les :: de séparation */
 }
 
 .navigation_chain a {
