@@ -1967,7 +1967,7 @@ grid-column: 2;
   border: var(--border);
   border-radius: 99px;
   box-shadow: 0 3px 0 rgba(165,129,79,.45),var(--shadowBox);
-  font-size: var(--size-h2);
+  font-size: var(--size-h1);
   letter-spacing: 0.04em;
 }
  
