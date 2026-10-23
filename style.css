@@ -1424,7 +1424,7 @@ order: 2;
   overflow: hidden;
   background: var(--sand2);
   border: 3px solid var(--parchment);
-  border-radius: 50%;
+  border-radius: var(--r12);
   box-shadow: 0 2px 5px rgba(0, 0, 0, .22);
 }
 .forum_avatar:empty { display: none; }
@@ -3131,7 +3131,7 @@ form[name="form_login"] .content {
     overflow: hidden;
     background: var(--sand2);
     border: 3px solid var(--sand1);
-    border-radius: 50%;
+    border-radius: var(--r12);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .22);
   }
   .forum_avatar:empty { display: none; }
