@@ -1259,7 +1259,7 @@ a.specials_links:empty {
 .category {
   background: var(--parchment);
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 25px;
   box-shadow: var(--shadowBox);
 }
@@ -1309,7 +1309,7 @@ a.specials_links:empty {
   column-gap: 10px;
   row-gap: 8px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 12px 14px;
   background: var(--sand1);
   border-radius: var(--r7);
