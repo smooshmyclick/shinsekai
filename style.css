@@ -2155,13 +2155,13 @@ ul.profile-icons li a:focus-visible,
   color: var(--ink);
   border: none;
   padding: 3px 5px;
-  border-radius: 5px;
+  border-radius: var(--r12);
   font-weight: 600;
 }
  
 /*Bouton au survol*/
 .rep-button:hover {
-  background: var(--gold);
+  background: var(--frost);
 }
  
 /* Texte "j'aime" */
