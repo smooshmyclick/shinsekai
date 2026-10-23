@@ -2911,7 +2911,7 @@ form[name="form_login"] .content {
   .forum_avatar:empty { display: none; }
   .forum_avatar img { width: 100%; height: 100%; object-fit: cover; display: block; filter: sepia(.2); }
  
-  .forum_lastpost { min-width: 0; font-size: var(--size-label); color: var(--softInk); }
+  .forum_lastpost { min-width: 0; font-size: var(--size-body); color: var(--softInk); }
   .forum_lastpost > span { display: block; overflow: hidden; text-overflow: ellipsis; }
   .forum_lastpost a { font-size: var(--size-body); font-weight: 700; }
   .forum_lastpost .lastpost_link { display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
