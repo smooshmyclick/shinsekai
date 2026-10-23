@@ -1622,7 +1622,7 @@ order: 2;
   z-index: -1;
   background:
     linear-gradient(to right, var(--parchment) 30%, transparent),
-    linear-gradient(rgba(251, 241, 217, .2), rgba(251, 241, 217, .2)),
+    linear-gradient(rgba(251, 241, 217, .8), rgba(251, 241, 217, .8)),
     url('https://i.imgur.com/012OSK5.jpeg') right bottom / cover no-repeat;
   border: 1px solid rgba(165, 129, 79, .35);
   border-radius: var(--r12);
