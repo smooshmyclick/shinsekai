@@ -2108,6 +2108,7 @@ ul.profile-icons li a,
   border: var(--border);
   border-radius: 50%;
   transition: background .15s, color .15s;
+  padding: 7px;
 }
  
 ul.profile-icons li a::before,
