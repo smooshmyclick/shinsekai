@@ -554,10 +554,9 @@ body#sce_smilies_body {
 /*** ------------------------------- ***/
 /*** ELEMENTS ESTHETIQUES ---------- ***/
 
-/* Contenur général qui sert généralement de fond et/ou de contour*/
 .container {
-    background: var(--parchmentDark);
-  padding: 10px;
+  background: var(--parchmentDark);
+  padding: 20px;
   border-radius: var(--r12);
   box-shadow: var(--shadowBox);
 }
