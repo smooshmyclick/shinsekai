@@ -1666,7 +1666,7 @@ order: 2;
  
 /* Titre du sujet */
 .topictitle {
-  font-size: var(--size-body);
+  font-size: var(--size-h2);
   font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1681,7 +1681,7 @@ order: 2;
 }
  
 .topic-type {
-  display: inline-block;
+  display: block;
   margin-right: 6px;
   padding: 1px 8px;
   border-radius: 99px;
@@ -1693,6 +1693,7 @@ order: 2;
   border: var(--border);
   background: var(--parchment);
   color: var(--woodDark);
+  width: fit-content;
 }
  
 .topic-type:empty {
